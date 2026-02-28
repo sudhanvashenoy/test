@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kavya G Bhat</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top">
+    <div class="wrap top__row">
+      <div class="brand">
+        <div class="brand__name">Kavya G Bhat</div>
+        <div class="brand__role">ECE Student | Canara Engineering College</div>
+      </div>
+
+      <div class="top__links">
+        <a href="KavyaGBhatCanara.pdf" download>Resume</a>
+        <span class="sep">|</span>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <main class="page">
+    <div class="wrap contactGrid">
+
+      <!-- Left info -->
+      <section class="left">
+        <h1 class="title">Contact</h1>
+        <p class="sub">Looking forward to hearing from you</p>
+
+        <div class="infoBlock">
+          <div class="label">Phone</div>
+          <div class="value">
+            <a href="tel:+918147987337">+91-81479-87337</a>
+          </div>
+        </div>
+
+        <div class="infoBlock">
+          <div class="label">Email</div>
+          <div class="value">
+            <a href="mailto:bhatkavya59@gmail.com">bhatkavya59@gmail.com</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right form -->
+      <section class="right">
+
+        <!-- ✅ WORKING EMAIL FORM (Formspree) -->
+        <form class="form"
+              action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+              method="POST">
+
+          <div class="row2">
+            <div class="field">
+              <label for="firstName">First Name</label>
+              <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+            </div>
+
+            <div class="field">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" autocomplete="family-name" required />
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" required></textarea>
+          </div>
+
+          <!-- Optional: Formspree extras -->
+          <input type="hidden" name="_subject" value="New message from Kavya Portfolio" />
+
+          <div class="btnWrap">
+            <button class="btn" type="submit">Submit</button>
+          </div>
+
+        </form>
+
+        <p class="tinyNote">
+          *Your message will be sent to my email.
+        </p>
+
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>
